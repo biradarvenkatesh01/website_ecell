@@ -1,0 +1,8 @@
+Events page: events → Events.tsx
+Home page: heroSlides, partners, initiatives, startups, testimonials, achievements → Home.tsx
+Gallery page: galleryImages → Gallery.tsx
+Resources page: resources, blogPosts → Resources.tsx
+Merchandise page: merchandise → Merchandise.tsx
+Contact page: faqs → Contact.tsx
+Footer: stats → Footer.tsx
+Team stays in team.tsx and is consumed by About.tsx

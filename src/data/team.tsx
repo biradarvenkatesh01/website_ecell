@@ -1,0 +1,841 @@
+// const teamOf23 = {
+//   year: "2023",
+//   presidents: [
+//     {
+//       name: "Rushil BR",
+//       post: "President",
+//       instagram: "rushil_br",
+//       linkedin: "rushil_br",
+//       email: "rushil_br",
+//       github: "rushil-br",
+//       imageUrl: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Vice President",
+//       instagram: "rushil_br",
+//       linkedin: "rushil_br",
+//       email: "rushil_br",
+//       github: "hi-kartik2004",
+//       imageUrl: "",
+//     },
+//   ],
+//   publicRelationsTeam: [
+//     {
+//       name: "Rushil BR",
+//       post: "Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//       github: "hi-kartik2004",
+//       imageUrl: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Vice Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//       github: "hi-kartik2004",
+//       imageUrl: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Executive",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//       github: "hi-kartik2004",
+//     },
+//   ],
+//   designTeam: [
+//     {
+//       name: "Rushil BR",
+//       post: "Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Vice Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Executive",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//   ],
+//   technicalTeam: [
+//     {
+//       name: "Rushil BR",
+//       post: "Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Vice Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Executive",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//   ],
+//   marketingTeam: [
+//     {
+//       name: "Rushil BR",
+//       post: "Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Vice Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Executive",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//   ],
+//   contentTeam: [
+//     {
+//       name: "Rushil BR",
+//       post: "Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Vice Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Executive",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//   ],
+//   operationsTeam: [
+//     {
+//       name: "Rushil BR",
+//       post: "Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Vice Lead",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//     {
+//       name: "Rushil BR",
+//       post: "Executive",
+//       instagram: "",
+//       linkedin: "",
+//       email: "",
+//     },
+//   ],
+// };
+
+const teamOf24 = {
+  year: "2024",
+  presidents: [
+    {
+      name: "Rushil B R",
+      post: "President",
+      instagram: "hill__rush",
+      linkedin: "https://www.linkedin.com/in/rushil-b-r",
+      email: "rushilbr225@gmail.com",
+      github: "rushilbr225",
+      imageUrl: "https://i.postimg.cc/sXnmnz9q/IMG-20231123-WA0057.jpg",
+    },
+    {
+      name: "Srivatsa Sheshadri",
+      post: "Vice President",
+      instagram: "srivatsashesha",
+      linkedin: "https://www.linkedin.com/in/srivatsa-sheshadri",
+      email: "srivatsa.shesha@gmail.com",
+      github: "srivatsashesha",
+      imageUrl: "https://i.postimg.cc/GhkxNcT9/Snapseed.jpg",
+    },
+  ],
+  publicRelationsTeam: [
+    {
+      name: "G Vaasudeva",
+      post: "Lead",
+      instagram: "vaasudevagopal",
+      linkedin: "Vaasudeva Gopal",
+      github: "",
+      email: "vaasudeva0223@gmail.com",
+      imageUrl: "https://i.postimg.cc/nLR113Rc/1657018991885.jpg",
+    },
+    {
+      name: "Chyavan Rao A S",
+      post: "Executive",
+      instagram: "chyavan_rao",
+      linkedin: "www.linkedin.com/in/chyavanraoas",
+      email: "chyavanrao24@gmail.com",
+      github: "Chyavanrao7",
+      imageUrl: "https://i.postimg.cc/13txRjqy/1703405812532.jpg",
+    },
+    {
+      name: "Kankana Ghosh",
+      post: "Executive",
+      instagram: "Kankana_09",
+      linkedin: "https://www.linkedin.com/in/kankana-ghosh-b7214a2b6/",
+      email: "kankanaghosh129@gmail.com",
+      github: "",
+      imageUrl: "https://i.postimg.cc/3w4p1vVV/IMG-20240328-210043.jpg",
+    },
+    {
+      name: "Karthikey D Kadati",
+      post: "Executive",
+      instagram: "karthikey_kadati",
+      linkedin:
+        "https://www.linkedin.com/in/karthikey-kadati-277420279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "karthikey5438@gmail.com",
+      github: "Karthikey1",
+      imageUrl: "https://i.postimg.cc/sgyNRVKR/IMG-20240122-171859.jpg",
+    },
+    {
+      name: "Sindhu T S",
+      post: "Executive",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/sindhu-t-s-768855259/",
+      email: "jaanu12092003@gmail.com",
+      github: "",
+      imageUrl: "https://i.postimg.cc/qMGQC432/1686930713217.jpg",
+    },
+  ],
+  designTeam: [
+    {
+      name: "Ashish",
+      post: "Lead",
+      instagram: "ashish.naidu.37",
+      linkedin: "",
+      email: "ashish2003naidu@gmail.com",
+      imageUrl: "https://postimg.cc/ZBSBDNV5",
+    },
+    {
+      name: "Veeksha S G",
+      post: "Vice Lead",
+      instagram: "veeksha_sg",
+      linkedin: "https://www.linkedin.com/in/veeksha-s-g-0a8a30228/",
+      email: "veekshasg6@gmail.com",
+      imageUrl: "https://i.postimg.cc/zXTV64hp/IMG-9312.jpg",
+    },
+    {
+      name: "Dhruv Rathi",
+      post: "Executive",
+      instagram: "iam_dhruvrathi",
+      linkedin: "https://www.linkedin.com/in/dhruv-rathi-399378282",
+      email: "dhruv2005rathi@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/rwzMynnJ/Screenshot-20231221-112724-Photos-01-01.jpg",
+    },
+    {
+      name: "Manvitha M Puthu",
+      post: "Executive",
+      instagram: "manvitham654",
+      linkedin: "https://www.linkedin.com/in/manvitha-m-puthu-02433a261/",
+      email: "manvithaputhu123@gmail.com",
+      imageUrl: "https://i.postimg.cc/XJRYXbFm/Manvitha-M-Puthu.jpg",
+    },
+    {
+      name: "Samyuktha Pasumarthi",
+      post: "Executive",
+      instagram: "samyuktha.pasu",
+      linkedin: "",
+      email: "samyuktha.pasumarthi@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/sDyCGHvD/Whats-App-Image-2024-04-01-at-9-42-28-AM.jpg",
+    },
+    {
+      name: "Zahiya Saher",
+      post: "Executive",
+      instagram: "zy.saher",
+      linkedin: "https://www.linkedin.com/in/zahiya-saher-138a4a260/",
+      email: "zahiyasaher19@gmail.com",
+      imageUrl: "https://i.postimg.cc/yxjfw0sL/1708171162578.jpg",
+    },
+  ],
+  technicalTeam: [
+    {
+      name: "Kartikeya Saini",
+      post: "Lead",
+      instagram: "",
+      linkedin: "https://linkedin.com/in/kartikeya-saini-65504b240",
+      email: "hire.kartikeya@gmail.com",
+      github: "hi-kartik2004",
+      imageUrl: "https://i.postimg.cc/25XbVMym/temp.jpg",
+    },
+    {
+      name: "Vansh Bharadwaj",
+      post: "Lead",
+      instagram: "one__shh",
+      linkedin: "https://www.linkedin.com/in/vansh-bhardwaj-5977681b1/",
+      email: "vanshayushi@gmail.com",
+      github: "Bhardwajvansh",
+      imageUrl: "https://i.postimg.cc/SxPmBMKQ/1680862132927.jpg",
+    },
+    {
+      name: "Dhruv Rathi",
+      post: "Executive",
+      instagram: "iam_dhruvrathi",
+      linkedin: "https://www.linkedin.com/in/dhruv-rathi-399378282",
+      email: "dhruv2005rathi@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/rwzMynnJ/Screenshot-20231221-112724-Photos-01-01.jpg",
+    },
+    {
+      name: "Jagruthi Kareholi",
+      post: "Executive",
+      instagram: "sapien.j_j",
+      linkedin:
+        "https://www.linkedin.com/in/jagruthi-kareholi-4a4033299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "jagruthikareholi@gmail.com",
+      imageUrl: "https://i.postimg.cc/Yqtfmdrn/IMG-20240328-WA0018.jpg",
+    },
+
+    {
+      name: "Zahiya Saher",
+      post: "Executive",
+      instagram: "zy.saher",
+      linkedin: "https://www.linkedin.com/in/zahiya-saher-138a4a260/",
+      email: "zahiyasaher19@gmail.com",
+      imageUrl: "https://i.postimg.cc/yxjfw0sL/1708171162578.jpg",
+    },
+  ],
+  marketingTeam: [
+    {
+      name: "Shreyash Suryawanshi",
+      post: "Lead",
+      instagram: "shreyashsuryawanshi",
+      linkedin: "Shreyash Suryawanshi",
+      email: "shreyashsuryawanshi926@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/XJZMLx5c/22738544-2bc7-4fde-9431-e76cbc2fd4e0.jpg",
+    },
+    {
+      name: "Tejas R Bhoopalam",
+      post: "Vice Lead",
+      instagram: "tejasrbhoopalam",
+      linkedin: "https://www.linkedin.com/in/tejas-r-bhoopalam",
+      email: "tejasraghavendrabhoopalam@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/bvTKgV4C/Screenshot-20240328-135557-2.jpg",
+    },
+    {
+      name: "Yadu Vaibhav",
+      post: "Executive",
+      instagram: "vaibhzyx",
+      linkedin:
+        "https://www.linkedin.com/in/yadu-vaibhav-90203025a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "vaibhavyadu8@gmail.com",
+      imageUrl: "https://i.postimg.cc/j2ksRwhh/1688193870389.jpg",
+    },
+
+    {
+      name: "Charan Sai Teja",
+      post: "Executive",
+      instagram: "CHARAN_SAI_TEJA_2004",
+      linkedin: "",
+      email: "Charansaiteja348@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/B6qcSxyX/Screenshot-20240328-202501-02-01-01.jpg",
+    },
+  ],
+  contentTeam: [
+    {
+      name: "Saadhvi V",
+      post: "Lead",
+      instagram: "saadhvix",
+      linkedin: "http://linkedin.com/in/saadhvi-v-0a9b01247",
+      email: "saadhvi2003@gmail.com",
+      imageUrl: "https://i.postimg.cc/d14vWMY0/IMG-2940.jpg",
+    },
+    {
+      name: "Ashray A",
+      post: "Executive",
+      Instagram: "ashhray",
+      linkedin: "https://linkedin.com/in/ashray24",
+      email: "ashraynichinmetlu@gmail.com",
+      imageUrl: "https://i.postimg.cc/BQ594L0m/profile.png",
+    },
+    {
+      name: "Skanda Bharadwaj",
+      post: "Executive",
+      instagram: "ska._.nda",
+      linkedin: "https://www.linkedin.com/in/skanda-bharadwaj-35779021b",
+      email: "skandabharadwaj11@gmail.com",
+      imageUrl: "https://i.postimg.cc/g28wmJWv/image.jpg",
+    },
+    {
+      name: "Varsha Rao",
+      post: "Executive",
+      instagram: "u.no.varsha",
+      linkedin: "https://www.linkedin.com/in/varsha-rao-5407032a5",
+      email: "varsharao2005@gmail.com",
+      imageUrl: "https://i.postimg.cc/9QsS30QG/1711454345619.jpg",
+    },
+  ],
+  operationsTeam: [
+    {
+      name: "H H Shamanth",
+      post: "Lead",
+      instagram: "",
+      linkedin:
+        "https://www.linkedin.com/in/shamanth-acharya-489a78204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "shamantacharya67@gmail.com",
+      imageUrl: "https://i.postimg.cc/SRrSd88R/Shamanth.jpg",
+    },
+    {
+      name: "Danish Neman Sharief",
+      post: "Executive",
+      instagram: "danish.shariff_",
+      linkedin: "https://www.linkedin.com/in/danish-shariff-b48a3025a",
+      email: "danishshariff92@gmail.com",
+      imageUrl: "https://i.postimg.cc/YSMFZZDz/1706450777661.jpg",
+    },
+    {
+      name: "Nitish Bhat",
+      post: "Executive",
+      instagram: "nithishbhat_",
+      linkedin:
+        "https://www.linkedin.com/in/nithish-bhat-098633265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "nithishbhat44@gmail.com",
+      imageUrl: "https://i.postimg.cc/sxSvHJzh/1708151914527.jpg",
+    },
+    {
+      name: "Sujeth",
+      post: "Executive",
+      instagram: "sujeth.17",
+      linkedin: "https://in.linkedin.com/in/sujeth-a-s-61a403278",
+      email: "a.s.sujeth17@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/wMWmLwNZ/472985860-IMG-20240122-WA0049.jpg",
+    },
+    {
+      name: "Samarth Sutrave",
+      post: "Executive",
+      instagram: "s_sutrave28",
+      linkedin: "https://www.linkedin.com/in/samarth-sutrave-93864425b",
+      email: "samarthsutrave28@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/cCSKtg5F/IMG-20240211-182530175-MF-PORTRAIT.jpg",
+    },
+  ],
+};
+
+const teamOf25 = {
+  year: "2025",
+  presidents: [
+    {
+      name: "Chyavan Rao A S",
+      post: "President",
+      instagram: "Chyavan_rao",
+      linkedin: "www.linkedin.com/in/chyavanrao",
+      email: "chyavanrao24@gmail",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/ydYT6ZX2/Whats-App-Image-2025-08-30-at-7-02-33-PM.jpg",
+    },
+    {
+      name: "Samarth Sutrave",
+      post: "Vice President",
+      instagram: "s_sutrave28",
+      linkedin: "https://www.linkedin.com/in/samarth-sutrave",
+      email: "samarthsutrave28@gmail.com",
+      github: "Samarth Sutrave",
+      imageUrl: "https://i.postimg.cc/5tC0nW60/Samarth-VP.jpg",
+    },
+  ],
+  publicRelationsTeam: [
+    {
+      name: "Kankana Ghosh",
+      post: "Lead",
+      instagram: "kankana_09",
+      linkedin: "https://www.linkedin.com/in/kankana-ghosh-/",
+      github: "",
+      email: "kankanaghosh179@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/cC90dFr2/Kankana-Ghosh-PR-Lead-ECE-2027.jpg",
+    },
+    {
+      name: "Karthikey D Kadati",
+      post: "Vice-Lead",
+      instagram: "karthikey_kadati",
+      linkedin:
+        "https://www.linkedin.com/in/karthikey-kadati-277420279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "Karthikey D Kadati",
+      email: "karthikey3608@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/ydnzTLXx/Karthikey-PR-Co-Lead-ISE2027.jpg",
+    },
+    {
+      name: "Adhilakshmi K",
+      post: "Executive",
+      instagram: "la_kshmi3739",
+      linkedin: "https://www.linkedin.com/in/adhi-lakshmi-kamasani-784a55281/",
+      email: "adhilakshmikamasani75639@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/d19Jxsvq/Adhilakshmi-K-PR-team-Mechanical-2027.jpg",
+    },
+    {
+      name: "Nilima Sharma",
+      post: "Executive",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/nilima-sharma-1755b0314/",
+      email: "nskneutrino3506@gmail.com",
+      github: "NiliS2006",
+      imageUrl:
+        "https://i.postimg.cc/ZnT5b9jB/Nilima-Sharma-PR-Team-ISE-28.jpg",
+    },
+    {
+      name: "Rithya Jayaram",
+      post: "Executive",
+      instagram: "",
+      linkedin:
+        "https://www.linkedin.com/in/rithya-jayaram-796b88335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "rithya2043@gmail.com",
+      github: "",
+      imageUrl: "https://i.postimg.cc/MprM9Y5s/Rithya-Jayaram-PR-ISE2028.jpg",
+    },
+    {
+      name: "Shravana R Holla",
+      post: "Executive",
+      instagram: "shravanaholla",
+      linkedin:
+        "https://www.linkedin.com/in/shravana-r-holla-24b587325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      email: "hollashravana@gmail.com",
+      github: "https://github.com/shravanaholla",
+      imageUrl: "https://i.postimg.cc/pdfvmWmD/shravana-holla-pr-cse2028.jpg",
+    },
+  ],
+  designTeam: [
+    {
+      name: "Samyuktha Pasumarthi",
+      post: "Lead",
+      instagram: "samyuktha.pasu",
+      linkedin: "https://www.linkedin.com/in/samyuktha-pasumarthi-3750272b5/",
+      email: "samyuktha.pasumarthi@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/nr0cCHwd/Samyuktha-designlead-eee2027.jpg",
+    },
+    {
+      name: "Priyanshu Raj",
+      post: "Executive",
+      instagram: "priyanshu_sharma_2004",
+      linkedin: "https://www.linkedin.com/in/priyanshuraj20",
+      email: "rajp200704@gmail.com",
+      github: "Priyanshu0980",
+      imageUrl: "https://i.postimg.cc/qRH7FD3G/Priyanshu-Design-ISE-27.jpg",
+    },
+    {
+      name: "Suraj Hulagur",
+      post: "Executive",
+      instagram: "",
+      linkedin: "linkedin.com/in/suraj-hulagur",
+      email: "hulagursuraj@gmail.com",
+      github: "github.com/Suraj-Hulagur",
+      imageUrl: "https://i.postimg.cc/TwjPvjjv/Suraj-Hulagur-Design-CSE28.jpg",
+    },
+    {
+      name: "Varun",
+      post: "Executive",
+      instagram: "varunn_.07._",
+      linkedin: "Varun Chandrashekar",
+      email: "varunchandrashekar016@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/8C2FSPqM/Varun-Chandrashekar-Design-EEE-28.jpg",
+    },
+    {
+      name: "Yashwanth M S",
+      post: "Executive",
+      instagram: "YASH_U0517",
+      linkedin:
+        "https://www.linkedin.com/in/yashawanth-m-s-3134a532a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "yashawanthmsmech@gmail.com",
+      github: "",
+      imageUrl:
+        "hhttps://i.postimg.cc/Jz97yYPW/YASHAWNATHMS-DESIGNTEAM-MECH2-NDYEAR.jpg",
+    },
+  ],
+  technicalTeam: [
+    {
+      name: "Dhruv Rathi",
+      post: "Lead",
+      instagram: "iam_dhruvrathi",
+      linkedin: "https://www.linkedin.com/in/dhruv-rathi-399378282/",
+      email: "dhruv2005rathi@gmail.com",
+      github: "",
+      imageUrl: "https://i.postimg.cc/bvBx2h4w/Dhruv-Rathi-Tech-Lead-CSE27.jpg",
+    },
+    {
+      name: "Jagruthi Kareholi",
+      post: "Vice-Lead",
+      instagram: "sapien.j_j",
+      linkedin: "https://www.linkedin.com/in/jagruthi-kareholi",
+      email: "jagruthikareholi@gmail.com",
+      github: "jagrutiii",
+      imageUrl:
+        "https://i.postimg.cc/mk5fvhnG/Jagruthi-Tech-co-lead-ECE2027.png",
+    },
+    {
+      name: "Punith Gowda",
+      post: "Executive",
+      instagram: "Punith017",
+      linkedin:
+        "https://www.linkedin.com/in/punith-gowda-n-h-745901308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "punithgowdanh@gmail.com",
+      gtihub: "",
+      imageUrl:
+        "https://i.postimg.cc/MGMcNjrz/Punith-Gowda-Technical-Cse-2027.jpg",
+    },
+    {
+      name: "Shravya Hegde",
+      post: "Executive",
+      instagram: "shra_vya.hegde",
+      linkedin: "https://www.linkedin.com/in/shravya-hegde-732ba7311/",
+      email: "shravyahegde286@gmail.com",
+      github: "https://github.com/shravya286",
+      imageUrl: "https://i.postimg.cc/LsbW4GTz/IMG-20250827-183528.jpg",
+    },
+    {
+      name: "Venkatesh Biradar",
+      post: "Executive",
+      instagram: "@biradarvenkatesh27",
+      linkedin: "www.linkedin.com/in/venkateshbiradar",
+      email: "biradarvenkatesh27@gmail.com",
+      github: "biradarvenkatesh27",
+      imageUrl: "https://i.postimg.cc/T3v3k4vY/Venkatesh-Technical-CSE28.jpg",
+    },
+  ],
+  marketingTeam: [
+    {
+      name: "Charan Sai Teja",
+      post: "Lead",
+      instagram: "",
+      linkedin:
+        "https://www.linkedin.com/in/charan-sai-teja-0152582a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "charansaiteja348@gmail.com",
+      github: "",
+      imageUrl: "https://i.postimg.cc/YqrvkPyn/Charan-Sai-Teja-marketing.jpg",
+    },
+    {
+      name: "Aasheesh Gandrati",
+      post: "Exceutive",
+      instagram: "aash3esh",
+      linkedin: "Aasheesh Gandrati ",
+      email: "aasheeshg1122@gmail.com",
+      github: "Aasheesh-code",
+      imageUrl:
+        "https://i.postimg.cc/fWxdMmWL/Aasheesh-Gandrati-Mechanical-Marketing.jpg",
+    },
+    {
+      name: "K R Nikhil Kumar",
+      post: "Executive",
+      instagram: "",
+      linkedin: "",
+      email: "krnikhilkumar140506@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/C1bRLpgt/K-R-Nikhil-Kumar-Marketing-EEE28.jpg",
+    },
+
+    {
+      name: "Kajal Rathore",
+      post: "Executive",
+      instagram: "kajal._.rathore",
+      linkedin: "https://www.linkedin.com/in/kajal-rathore-383a54334",
+      email: "kajalrathore601@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/xdMfLG4N/Kajal-Rathore-marketing-mech28.jpg",
+    },
+    {
+      name: "Keerthi P Nagaraja",
+      post: "Executive",
+      instagram: "Clones.of.keer",
+      linkedin:
+        "https://www.linkedin.com/in/keerthi-p-nagaraja-8913a9294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "kpn23506@gmail.com",
+      github: "",
+      imageUrl: "https://i.postimg.cc/1zhPRn3m/Keerthi-marketing-mech28.jpg",
+    },
+    {
+      name: "Mithun S",
+      post: "Executive",
+      instagram: "mithun_028",
+      linkedin:
+        "https://www.linkedin.com/in/mithun-srinivas-3bba57306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "mithunsrinivas28@gmail.com",
+      github: "MithunSrinivas28",
+      imageUrl: "https://i.postimg.cc/JzBMWcmY/Mithun-S-Marketing-ECE-27.jpg",
+    },
+  ],
+  contentTeam: [
+    {
+      name: "Varsha Rao",
+      post: "Lead",
+      instagram: "u.no.varsha",
+      linkedin: "https://www.linkedin.com/in/varsha-rao-5407032a5/",
+      email: "varsharao2005@gmail.com",
+      github: "varsharao2005",
+      imageUrl:
+        "https://i.postimg.cc/0j29gT27/Varsha-Rao-Content-Lead-AIML27.webp",
+    },
+    {
+      name: "Skanda Bharadwaj",
+      post: "Vice-Lead",
+      Instagram: "ska._.nda",
+      linkedin: "https://www.linkedin.com/in/skanda-bharadwaj-35779021b",
+      email: "skandabharadwaj11@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/J4xBk8kC/Skanda-Bharadwaj-Content-co-lead-ECE27.jpg",
+    },
+    {
+      name: "Ananya Ramesh",
+      post: "Executive",
+      instagram: "ananyaramesh23",
+      linkedin:
+        "https://www.linkedin.com/in/ananya-ramesh-83b1b2356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "ananyar2311@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/kGcDKNDv/Ananya-Ramesh-Content-team-ISE-2028.jpg",
+    },
+    {
+      name: "Riya K Alex",
+      post: "Executive",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/riyakalex",
+      email: "riyakalex3@gmail.com",
+      github: "riyakalex",
+      imageUrl: "https://i.postimg.cc/9QsS30QG/1711454345619.jpg",
+    },
+    {
+      name: "Sarah Ezaz Shaikh",
+      post: "Executive",
+      instagram: "",
+      linkedin:
+        "https://www.linkedin.com/in/sarah-shaikh-10022929b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "sarahezshaikh@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/4Ns9yyn1/Sarah-Ezaz-Shaikh-content-EEE28.jpg",
+    },
+    {
+      name: "Uditha Reddy",
+      post: "Executive",
+      instagram: "udithar_s",
+      linkedin: "www.linkedin.com/in/uditha-reddy-aa88b3330",
+      email: "udithareddys@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/Wbzs5cyv/Uditha-Reddy-Content-ECE-2028.jpg",
+    },
+  ],
+  operationsTeam: [
+    {
+      name: "Sujeth A S",
+      post: "Lead",
+      instagram: "sujeth.17",
+      linkedin: "https://in.linkedin.com/in/sujeth-a-s-61a403278",
+      email: "a.s.sujeth17@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/VsBJxw40/Sujeth-A-S-Operations-Team-2027.jpg",
+    },
+    {
+      name: "Amith Kumar",
+      post: "Executive",
+      instagram: "Amithbagur",
+      linkedin: "https://www.linkedin.com/in/amith-bagut-9b78b8337/",
+      email: "bagutamith@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/RFmMd3ks/Amith-Kumar-Operations-EEE-28.jpg",
+    },
+    {
+      name: "Anjan M",
+      post: "Executive",
+      instagram: "anjananju0126@gmail.com",
+      linkedin:
+        "https://www.linkedin.com/in/anjan-m-416656330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "_anjan.0126_",
+      github: "Anjan-0126",
+      imageUrl: "https://i.postimg.cc/FsT7KxM9/Anjan-Operations-CSE-28.jpg",
+    },
+    {
+      name: "Devesh",
+      post: "Executive",
+      instagram: "de.v_18__",
+      linkedin:
+        "https://www.linkedin.com/in/devesh-s-1955122ba/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "a.s.sujeth17@gmail.com",
+      imageUrl:
+        "https://i.postimg.cc/y8WW3ZK0/S-Devesh-Operations-ECE-2nd-year.jpg",
+    },
+    {
+      name: "Jeevan A",
+      post: "Executive",
+      instagram: "omjeevan__18_",
+      linkedin:
+        "https://www.linkedin.com/in/jeevan-ashok-a10303375/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "devesh_23eceu090@uvce.ac.in",
+      github: "",
+      imageUrl: "https://i.postimg.cc/BnvP5zTL/Jeevan-A-Operations-ISE2028.jpg",
+    },
+    {
+      name: "Niranjana Reddy",
+      post: "Executive",
+      instagram: "niranjanareddyyy",
+      linkedin:
+        "https://www.linkedin.com/in/niranjana-reddy-338686249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "niranjanasreddy@gmail.com",
+      github: "",
+      imageUrl:
+        "https://i.postimg.cc/Qtj3527v/Niranjana-Reddy-operations-mech28.jpg",
+    },
+  ],
+};
+
+const teamData = [
+  teamOf25, // Latest year first to be the default
+  teamOf24,
+  //teamOf23,
+];
+
+export { teamData };
