@@ -501,16 +501,6 @@ const teamOf25 = {
         "https://i.postimg.cc/ydnzTLXx/Karthikey-PR-Co-Lead-ISE2027.jpg",
     },
     {
-      name: "Adhilakshmi K",
-      post: "Executive",
-      instagram: "la_kshmi3739",
-      linkedin: "https://www.linkedin.com/in/adhi-lakshmi-kamasani-784a55281/",
-      email: "adhilakshmikamasani75639@gmail.com",
-      github: "",
-      imageUrl:
-        "https://i.postimg.cc/d19Jxsvq/Adhilakshmi-K-PR-team-Mechanical-2027.jpg",
-    },
-    {
       name: "Nilima Sharma",
       post: "Executive",
       instagram: "",
@@ -588,7 +578,7 @@ const teamOf25 = {
       email: "yashawanthmsmech@gmail.com",
       github: "",
       imageUrl:
-        "hhttps://i.postimg.cc/Jz97yYPW/YASHAWNATHMS-DESIGNTEAM-MECH2-NDYEAR.jpg",
+        "https://i.postimg.cc/5tKd7Pr7/YASHAWNATHMS-DESIGNTEAM-MECH2-NDYEAR.jpg",
     },
   ],
   technicalTeam: [
@@ -638,7 +628,17 @@ const teamOf25 = {
       linkedin: "www.linkedin.com/in/venkateshbiradar",
       email: "biradarvenkatesh27@gmail.com",
       github: "biradarvenkatesh27",
-      imageUrl: "https://i.postimg.cc/T3v3k4vY/Venkatesh-Technical-CSE28.jpg",
+      imageUrl: "https://i.postimg.cc/0N8BqpSV/Venkatesh-Technical-CSE28.jpg",
+    },
+    {
+      name: "Riya K Alex",
+      post: "Executive",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/riyakalex",
+      email: "riyakalex3@gmail.com",
+      github: "riyakalex",
+      imageUrl:
+        "https://i.postimg.cc/Pry6QC93/Riya-K-Alex-Content-ECE-2028.jpg",
     },
   ],
   marketingTeam: [
@@ -743,7 +743,8 @@ const teamOf25 = {
       linkedin: "https://www.linkedin.com/in/riyakalex",
       email: "riyakalex3@gmail.com",
       github: "riyakalex",
-      imageUrl: "https://i.postimg.cc/9QsS30QG/1711454345619.jpg",
+      imageUrl:
+        "https://i.postimg.cc/Pry6QC93/Riya-K-Alex-Content-ECE-2028.jpg",
     },
     {
       name: "Sarah Ezaz Shaikh",

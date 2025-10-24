@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "StartUp Conclave 2025",
+    "description": "Annual flagship event featuring industry leaders, investors, and successful entrepreneurs sharing insights on building sustainable startups.",
+    "date": "2025-11-15",
+    "venue": "UVCE Auditorium",
+    "image": "https://res.cloudinary.com/demo/image/upload/startup-conclave.jpg",
+    "type": "upcoming",
+    "registrationLink": "https://forms.gle/example1",
+    "fullDescription": "Join us for our biggest event of the year where we bring together the brightest minds in entrepreneurship. Network with investors, learn from successful founders, and pitch your ideas to a panel of experts."
+  },
+  {
+    "id": 2,
+    "title": "Pitch Perfect Workshop",
+    "description": "Learn the art of pitching your startup idea to investors with hands-on practice sessions and expert feedback.",
+    "date": "2025-11-01",
+    "venue": "Seminar Hall 3",
+    "image": "https://res.cloudinary.com/demo/image/upload/pitch-workshop.jpg",
+    "type": "upcoming",
+    "registrationLink": "https://forms.gle/example2",
+    "fullDescription": "Master the fundamentals of creating compelling pitch decks, storytelling techniques, and handling tough investor questions."
+  },
+  {
+    "id": 3,
+    "title": "Founder's Fireside Chat",
+    "description": "Intimate conversation with successful alumni entrepreneurs discussing their journey, challenges, and lessons learned.",
+    "date": "2025-10-20",
+    "venue": "E-Cell Hub",
+    "image": "https://res.cloudinary.com/demo/image/upload/fireside-chat.jpg",
+    "type": "upcoming",
+    "registrationLink": "https://forms.gle/example3",
+    "fullDescription": "Get inspired by real stories from founders who started their journey right here at UVCE. Ask questions, seek advice, and build connections."
+  },
+  {
+    "id": 4,
+    "title": "Hackathon 2024: Build for Impact",
+    "description": "48-hour innovation marathon where teams built solutions for real-world social problems with mentorship from industry experts.",
+    "date": "2024-08-15",
+    "venue": "UVCE Campus",
+    "image": "https://res.cloudinary.com/demo/image/upload/hackathon-2024.jpg",
+    "type": "past",
+    "registrationLink": "",
+    "fullDescription": "Over 200 participants formed 50 teams to tackle challenges in healthcare, education, and sustainability. Winners received seed funding and incubation support."
+  },
+  {
+    "id": 5,
+    "title": "E-Summit 2024",
+    "description": "Three-day entrepreneurship summit featuring workshops, panel discussions, startup exhibitions, and networking opportunities.",
+    "date": "2024-03-20",
+    "venue": "UVCE Main Auditorium",
+    "image": "https://res.cloudinary.com/demo/image/upload/e-summit-2024.jpg",
+    "type": "past",
+    "registrationLink": "",
+    "fullDescription": "Our flagship annual event attracted 500+ attendees, 20+ speakers, and showcased 30 student startups. Highlight included keynote from a unicorn founder."
+  },
+  {
+    "id": 6,
+    "title": "Business Model Canvas Workshop",
+    "description": "Hands-on workshop teaching lean startup methodology and business model development using real case studies.",
+    "date": "2024-02-10",
+    "venue": "Conference Room A",
+    "image": "https://res.cloudinary.com/demo/image/upload/bmc-workshop.jpg",
+    "type": "past",
+    "registrationLink": "",
+    "fullDescription": "Participants learned to validate their business ideas systematically using the Business Model Canvas framework with practical exercises."
+  },
+  {
+    "id": 7,
+    "title": "Investor Connect Meetup",
+    "description": "Exclusive networking event connecting student entrepreneurs with angel investors and venture capitalists.",
+    "date": "2024-01-15",
+    "venue": "Innovation Center",
+    "image": "https://res.cloudinary.com/demo/image/upload/investor-meet.jpg",
+    "type": "past",
+    "registrationLink": "",
+    "fullDescription": "15 startups pitched to a panel of 8 investors. 3 teams secured follow-up meetings for potential funding discussions."
+  }
+]
