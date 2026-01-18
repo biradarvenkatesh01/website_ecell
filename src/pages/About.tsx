@@ -12,7 +12,7 @@ const formatTeamName = (key: string): string => {
 const isLead = (post: string): boolean => {
   const lower = post.toLowerCase();
   return ["president", "lead", "head", "vice president"].some((r) =>
-    lower.includes(r)
+    lower.includes(r),
   );
 };
 
@@ -22,7 +22,6 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-black text-white pt-32 pb-16 font-sans selection:bg-[#39FF14] selection:text-black">
-      {/* --- BACKGROUND DOT MATRIX --- */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.12]"
         style={{
@@ -32,115 +31,201 @@ const About = () => {
       />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* --- HEADER SECTION: MASSIVE TYPOGRAPHY --- */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-32"
-        >
-          <div className="flex items-center gap-2 mb-6">
-            <Sparkles size={14} className="text-[#39FF14] animate-pulse" />
-            <span className="text-[10px] uppercase tracking-[0.5em] text-gray-500 font-bold">
-              The Protocol
-            </span>
+        {/* --- HEADER SECTION --- */}
+        <section className="mb-32">
+          <div className="flex flex-col items-center text-center">
+            <div className="flex items-center gap-2 mb-6">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#39FF14] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#39FF14]"></span>
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.5em] text-gray-500 font-bold font-mono">
+                Who we are
+              </span>
+            </div>
+            <h1 className="text-7xl md:text-[9rem] font-bold tracking-tighter leading-[0.85] mb-8">
+              About <br />
+              <span className="text-gray-600 italic font-light">
+                E-Cell UVCE.
+              </span>
+            </h1>
           </div>
-          <h1 className="text-7xl md:text-[9rem] font-bold tracking-tighter leading-[0.85] mb-8">
-            Our <br />
-            <span className="text-gray-600 italic font-light">Purpose.</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-2xl font-light leading-relaxed">
-            E-Cell UVCE is an institutional-grade platform designed to nurture
-            the architects of tomorrow's startup ecosystem.
-          </p>
-        </motion.div>
+        </section>
 
-        {/* --- VISION & MISSION: BENTO BOXES --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-40">
-          {[
-            {
-              title: "Our Vision",
-              icon: Eye,
-              text: "To foster a dynamic ecosystem where aspiring entrepreneurs are empowered with resources, mentorship, and networking opportunities to transform their ideas into impactful ventures. Through inclusive programs and a culture of innovation, we strive to cultivate a new generation of visionary leaders dedicated to driving positive change and creating a more prosperous future.",
-            },
-            {
-              title: "Our Mission",
-              icon: Target,
-              text: "To inspire, educate, and support aspiring entrepreneurs through comprehensive resources and opportunities, fostering a culture of innovation and collaboration to catalyse the growth of impactful ventures.",
-            },
-            {
-              title: "History",
-              icon: History,
-              text: [
-                "The Entrepreneurship Cell of UVCE, founded in 2014 by Tejas Narayan, stands tall as a student-run body with the goal of fostering an entrepreneurial culture and providing the most unique opportunities to the student community. In 2019, the club was re-organized with support from the alumni. We, at the Entrepreneurship Cell UVCE, seek to instil an Entrepreneurship drive among the students of the college.",
-
-                "With our numerous workshops, seminars, and events, we aim to further the students' understanding of business from how to chalk out a business plan to executing it. The E-Cell envisions nurturing the innovative potential of every student, in a bid to invigorate and inspire them to get one step closer to their entrepreneurial vision.",
-
-                "From networking, and business modelling to investor pitches, E-Cell continually strives to provide students with a platform to holistically develop, learn and expand the horizon of opportunities that lie before them. We also provide opportunities for our members to gain a better understanding of the finance world by facilitating regular interactions with them.",
-              ],
-            },
-          ].map((item, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-12 bg-white/[0.02] border border-white/5 rounded-2xl hover:border-[#39FF14]/30 transition-all duration-500 group"
-            >
-              <item.icon className="h-10 w-10 text-[#39FF14] mb-12 group-hover:scale-110 transition-transform" />
-
-              <h2 className="text-3xl font-bold mb-6 uppercase tracking-tighter">
-                {item.title}
+        {/* --- UNIFIED INSTITUTIONAL & E-CELL CONTEXT --- */}
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-6 mb-40">
+          {/* 1. About UVCE: The Foundation (Full Width Top) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="md:col-span-6 relative p-8 md:p-12 bg-zinc-900/20 border border-white/5 rounded-3xl overflow-hidden group hover:bg-zinc-900/40 transition-all duration-700"
+          >
+            <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#39FF14]/5 blur-[100px]" />
+            <div className="relative z-10 flex flex-col items-center text-center">
+              <span className="text-[#39FF14] text-[10px] font-bold uppercase tracking-[0.5em] mb-4 font-mono">
+                Established 1917
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-widest text-white mb-8">
+                About{" "}
+                <span className="text-zinc-700 italic font-light">UVCE.</span>
               </h2>
+              <p className="text-zinc-500 leading-relaxed font-light text-lg max-w-5xl">
+                The{" "}
+                <b className="text-zinc-300">
+                  University Visvesvaraya College of Engineering
+                </b>{" "}
+                was established by
+                <b className="text-zinc-300">
+                  {" "}
+                  Bharat Ratna Sir M Visvesvaraya
+                </b>
+                . As the first engineering college in Karnataka and fifth in
+                India, UVCE has pioneered technical education for over a
+                century. Today, it remains a premier institution offering 8
+                undergraduate and 24 postgraduate programs, dedicated to
+                delivering high-quality technical excellence and fostering the
+                next generation of global engineers.
+              </p>
+            </div>
+          </motion.div>
 
-              {/* 🔹 FIXED TEXT RENDERING */}
-              {Array.isArray(item.text) ? (
-                <div className="space-y-4">
-                  {item.text.map((para, idx) => (
-                    <p
-                      key={idx}
-                      className="text-gray-500 leading-relaxed font-light text-lg"
-                    >
-                      {para}
-                    </p>
-                  ))}
+          {/* 2. Our Vision (Left Side) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="md:col-span-3 relative p-8 md:p-12 bg-zinc-900/20 border border-white/5 rounded-3xl overflow-hidden group hover:bg-zinc-900/40 transition-all duration-700"
+          >
+            <div className="flex flex-col items-center text-center">
+              <div className="p-3 bg-white/5 rounded-xl border border-white/10 group-hover:border-[#39FF14]/50 transition-colors mb-6">
+                <Eye className="h-6 w-6 text-[#39FF14]" />
+              </div>
+              <h2 className="text-xl font-bold uppercase tracking-widest text-white mb-6">
+                Our Vision
+              </h2>
+              <p className="text-zinc-500 leading-relaxed font-light text-base">
+                To foster a dynamic ecosystem where aspiring entrepreneurs are
+                empowered with resources, mentorship, and networking
+                opportunities to transform their ideas into impactful ventures.
+                Through inclusive programs and a culture of innovation, we
+                strive to cultivate a new generation of visionary leaders
+                dedicated to driving positive change and creating a more
+                prosperous future.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* 3. Our Mission (Right Side) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="md:col-span-3 relative p-8 md:p-12 bg-zinc-900/20 border border-white/5 rounded-3xl overflow-hidden group hover:bg-zinc-900/40 transition-all duration-700"
+          >
+            <div className="flex flex-col items-center text-center">
+              <div className="p-3 bg-white/5 rounded-xl border border-white/10 group-hover:border-[#39FF14]/50 transition-colors mb-6">
+                <Target className="h-6 w-6 text-[#39FF14]" />
+              </div>
+              <h2 className="text-xl font-bold uppercase tracking-widest text-white mb-6">
+                Our Mission
+              </h2>
+              <p className="text-zinc-500 leading-relaxed font-light text-base">
+                To inspire, educate, and support aspiring entrepreneurs through
+                comprehensive resources and opportunities, fostering a culture
+                of innovation and collaboration to catalyse the growth of
+                impactful ventures.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* 4. Legacy & History (Full Width Bottom) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="md:col-span-6 relative p-8 md:p-12 bg-zinc-900/20 border border-white/5 rounded-3xl overflow-hidden group hover:bg-zinc-900/40 transition-all duration-700"
+          >
+            <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#39FF14]/5 blur-[100px] group-hover:bg-[#39FF14]/10 transition-all" />
+
+            <div className="relative z-10">
+              <div className="flex flex-col items-center text-center mb-12">
+                <div className="p-3 bg-white/5 rounded-xl border border-white/10 group-hover:border-[#39FF14]/50 transition-colors mb-6">
+                  <History className="h-6 w-6 text-[#39FF14]" />
                 </div>
-              ) : (
-                <p className="text-gray-500 leading-relaxed font-light text-lg">
-                  {item.text}
+                <h2 className="text-2xl font-bold uppercase tracking-widest text-white">
+                  History
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-left">
+                <p className="text-zinc-500 leading-relaxed font-light text-sm md:text-base">
+                  The Entrepreneurship Cell of UVCE, founded in{" "}
+                  <b className="text-zinc-300 font-medium">
+                    2014 by Tejas Narayan
+                  </b>
+                  , stands tall as a student-run body with the goal of fostering
+                  an{" "}
+                  <b className="text-zinc-400 font-medium">
+                    entrepreneurial culture
+                  </b>
+                  . In 2019, the club was re-organized with significant{" "}
+                  <b className="text-zinc-400 font-medium">
+                    support from the alumni
+                  </b>
+                  .
                 </p>
-              )}
-            </motion.div>
-          ))}
+
+                <p className="text-zinc-400 leading-relaxed font-light text-sm md:text-base">
+                  Through workshops, seminars, and flagship events, we guide
+                  students from{" "}
+                  <b className="text-zinc-400 font-medium">
+                    ideation to execution
+                  </b>
+                  . The E-Cell envisions nurturing the{" "}
+                  <b className="text-zinc-400 font-medium">
+                    innovative potential
+                  </b>{" "}
+                  of every student, invigorated to bring them one step closer to
+                  their entrepreneurial vision.
+                </p>
+
+                <p className="text-zinc-400 leading-relaxed font-light text-sm md:text-base">
+                  From networking and business modelling to{" "}
+                  <b className="text-zinc-400 font-medium">investor pitches</b>,
+                  E-Cell strives to provide a platform to holistically develop,
+                  including{" "}
+                  <b className="text-zinc-400 font-medium">
+                    direct interactions with the finance world
+                  </b>{" "}
+                  to expand the horizon of opportunities.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         {/* --- TEAM SECTION --- */}
-        <section className="py-24 border-t border-white/5">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-12">
+        <section className="py-32 border-t border-white/5">
+          <div className="flex flex-col items-center text-center mb-24 gap-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Camera size={14} className="text-[#39FF14]" />
-                <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-gray-600">
-                  Personnel_Directory
-                </span>
-              </div>
-              <h2 className="text-6xl md:text-8xl font-bold tracking-tighter leading-none">
+              <span className="text-[#39FF14] text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block font-mono">
+                Core Leadership & Members
+              </span>
+              <h2 className="text-6xl md:text-8xl font-bold tracking-tighter text-white">
                 The{" "}
-                <span className="text-gray-600 italic font-light">
-                  Council.
-                </span>
+                <span className="text-zinc-700 italic font-light">Team.</span>
               </h2>
             </div>
 
-            {/* Year Selector */}
-            <div className="flex bg-white/5 p-1.5 rounded-full border border-white/10 backdrop-blur-md">
+            <div className="flex bg-zinc-900/50 p-1 rounded-full border border-white/10 backdrop-blur-xl">
               {teamData.map((team) => (
                 <button
                   key={team.year}
                   onClick={() => setSelectedYear(team.year)}
                   className={`px-8 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all duration-500 ${
                     selectedYear === team.year
-                      ? "bg-[#39FF14] text-black shadow-[0_0_20px_rgba(57,255,20,0.4)]"
+                      ? "bg-[#39FF14] text-black shadow-[0_0_20px_rgba(57,255,20,0.3)]"
                       : "text-gray-500 hover:text-white"
                   }`}
                 >
@@ -154,9 +239,9 @@ const About = () => {
             {selectedTeam ? (
               <motion.div
                 key={selectedYear}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
                 className="space-y-32"
               >
                 {Object.entries(selectedTeam).map(([teamName, members]) => {
@@ -167,22 +252,21 @@ const About = () => {
                   )
                     return null;
 
-                  // Split members into two groups
                   const leads = members.filter((m) => isLead(m.post));
                   const regularMembers = members.filter((m) => !isLead(m.post));
 
                   return (
-                    <div key={teamName} className="relative">
-                      {/* Sticky Section Header */}
-                      <div className="sticky top-24 z-20 bg-black/50 backdrop-blur-sm py-4 mb-12 border-b border-white/5">
-                        <h3 className="text-[10px] uppercase tracking-[0.8em] text-[#39FF14] font-mono font-black">
-                          // SECTION: {teamName.toUpperCase()}
+                    <div key={teamName}>
+                      <div className="flex items-center gap-4 mb-16">
+                        <div className="h-[1px] flex-grow bg-gradient-to-l from-white/10 to-transparent" />
+                        <h3 className="text-sm font-mono text-[#39FF14] uppercase tracking-[0.4em]">
+                          {formatTeamName(teamName)}
                         </h3>
+                        <div className="h-[1px] flex-grow bg-gradient-to-r from-white/10 to-transparent" />
                       </div>
 
-                      {/* LEADS ROW: Max 2 per line */}
                       {leads.length > 0 && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
                           {leads.map((member, index) => (
                             <TeamCard
                               key={`lead-${index}`}
@@ -193,7 +277,6 @@ const About = () => {
                         </div>
                       )}
 
-                      {/* MEMBERS GRID: Max 5 per line */}
                       {regularMembers.length > 0 && (
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                           {regularMembers.map((member, index) => (
@@ -210,9 +293,9 @@ const About = () => {
                 })}
               </motion.div>
             ) : (
-              <div className="text-center py-40 border border-dashed border-white/10 rounded-3xl">
-                <p className="text-gray-600 uppercase tracking-[0.4em] text-xs animate-pulse">
-                  System_Updating... Personnel_Data_Syncing
+              <div className="text-center py-40">
+                <p className="text-zinc-600 font-mono text-xs animate-pulse tracking-widest uppercase">
+                  Retrieving Council Records...
                 </p>
               </div>
             )}

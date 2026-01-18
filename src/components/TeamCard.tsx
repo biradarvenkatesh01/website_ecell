@@ -1,46 +1,117 @@
-import { Terminal } from "lucide-react";
+import { Instagram, Linkedin, Github, Mail, ExternalLink } from "lucide-react";
 
-const TestimonialCard = ({ testimonial }: { testimonial: any }) => {
-  return (
-    <div className="w-[300px] md:w-[420px] shrink-0 bg-[#050505] border border-white/5 p-5 rounded-lg group/card hover:border-[#39FF14]/40 transition-all duration-500 mx-3 flex flex-col backdrop-blur-xl">
-      {/* Terminal-style Header */}
-      <div className="flex items-center justify-between mb-4 border-b border-white/5 pb-3">
-        <div className="flex items-center gap-2">
-          <Terminal size={12} className="text-[#39FF14] opacity-50" />
-          <span className="text-[9px] font-mono uppercase tracking-widest text-gray-500">
-            Feed_Ref_{testimonial.id || "0x_SEC"}
-          </span>
+interface TeamMember {
+  name: string;
+  post: string;
+  imageUrl: string;
+  instagram?: string;
+  linkedin?: string;
+  email?: string;
+  github?: string;
+}
+
+interface TeamCardProps {
+  member: TeamMember;
+  isLead: boolean;
+}
+
+const TeamCard = ({ member, isLead }: TeamCardProps) => {
+  // Common Social Icon Component to keep code DRY
+  const Socials = ({ size = 14 }: { size?: number }) => (
+    <div className="flex gap-3 mt-3">
+      {member.linkedin && (
+        <a
+          href={member.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          className="text-zinc-500 hover:text-[#39FF14] transition-colors"
+        >
+          <Linkedin size={size} />
+        </a>
+      )}
+      {member.instagram && (
+        <a
+          href={`https://instagram.com/${member.instagram}`}
+          target="_blank"
+          rel="noreferrer"
+          className="text-zinc-500 hover:text-[#39FF14] transition-colors"
+        >
+          <Instagram size={size} />
+        </a>
+      )}
+      {member.github && member.github !== "" && (
+        <a
+          href={`https://github.com/${member.github}`}
+          target="_blank"
+          rel="noreferrer"
+          className="text-zinc-500 hover:text-[#39FF14] transition-colors"
+        >
+          <Github size={size} />
+        </a>
+      )}
+      {member.email && (
+        <a
+          href={`mailto:${member.email}`}
+          className="text-zinc-500 hover:text-[#39FF14] transition-colors"
+        >
+          <Mail size={size} />
+        </a>
+      )}
+    </div>
+  );
+
+  if (isLead) {
+    // HORIZONTAL LAYOUT FOR LEADS (President/VP/Heads)
+    return (
+      <div className="group relative bg-zinc-900/30 border border-white/10 rounded-2xl overflow-hidden hover:border-[#39FF14]/40 transition-all duration-500">
+        <div className="flex flex-col sm:flex-row items-center">
+          {/* Picture on Left */}
+          <div className="w-full sm:w-40 h-48 sm:h-40 shrink-0 overflow-hidden">
+            <img
+              src={member.imageUrl}
+              alt={member.name}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          {/* Info on Right */}
+          <div className="p-6 flex flex-col justify-center">
+            <h4 className="text-xl font-bold text-white tracking-tight mb-1">
+              {member.name}
+            </h4>
+            <p className="text-[#39FF14] font-mono text-[10px] uppercase tracking-[0.2em] mb-2">
+              {member.post}
+            </p>
+            <Socials size={16} />
+          </div>
         </div>
-        <div className="h-1 w-1 rounded-full bg-[#39FF14] animate-pulse" />
+      </div>
+    );
+  }
+
+  // VERTICAL LAYOUT FOR REGULAR MEMBERS
+  return (
+    <div className="group bg-zinc-950/50 border border-white/5 p-4 rounded-xl hover:border-white/20 transition-all duration-300">
+      <div className="relative aspect-square overflow-hidden rounded-lg mb-4">
+        <img
+          src={member.imageUrl}
+          alt={member.name}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
       </div>
 
-      {/* Body: Tightened leading and fixed text wrapping */}
-      <div className="mb-6">
-        <p className="text-[12px] md:text-[13px] font-light leading-snug text-gray-300 whitespace-normal break-words italic">
-          "{testimonial.text}"
+      <div className="space-y-1">
+        <h4 className="text-sm font-bold text-white truncate group-hover:text-[#39FF14] transition-colors">
+          {member.name}
+        </h4>
+        <p className="text-[9px] text-zinc-500 uppercase tracking-widest font-mono">
+          {member.post}
         </p>
       </div>
 
-      {/* Footer: Identity Node */}
-      <div className="flex items-center gap-3 mt-auto pt-4 border-t border-white/5">
-        <div className="h-8 w-8 rounded bg-zinc-800 shrink-0 overflow-hidden border border-white/10">
-          <img
-            src={testimonial.image}
-            alt={testimonial.name}
-            className="w-full h-full object-cover grayscale group-hover/card:grayscale-0 transition-all duration-500"
-          />
-        </div>
-        <div className="flex flex-col text-left overflow-hidden">
-          <h4 className="text-[10px] md:text-[11px] font-bold text-white uppercase tracking-tighter truncate">
-            {testimonial.name}
-          </h4>
-          <p className="text-[8px] uppercase tracking-[0.2em] text-[#39FF14] font-mono truncate">
-            {testimonial.designation}
-          </p>
-        </div>
-      </div>
+      <Socials size={12} />
     </div>
   );
 };
 
-export default TestimonialCard;
+export default TeamCard;
