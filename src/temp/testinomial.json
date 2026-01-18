@@ -3,8 +3,8 @@
         "id": 1,
         "name": "Dr. Venugopal K R",
         "text": "E-Cell UVCE has transformed the entrepreneurial culture on campus. Students are now thinking beyond traditional career paths and exploring innovative solutions to real-world problems.",
-        "image": "https://res.cloudinary.com/demo/image/upload/testimonial-1.jpg",
-        "designation": "Principal, UVCE"
+        "image": "data:image/jpeg;base64,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",
+        "designation": "Former Principal, UVCE"
     },
     {
         "id": 2,
@@ -33,5 +33,68 @@
         "text": "The Startup Incubation Program gave me the structure and support I needed. From ideation to MVP, E-Cell was with me every step of the way.",
         "image": "https://res.cloudinary.com/demo/image/upload/testimonial-5.jpg",
         "designation": "Founder, EcoSolutions (Alumni)"
+    },
+    {
+        "id": 6,
+        "name": "Shrihari Jawalgi",
+        "text": "The energy at the event Marketing ads was electric! I walked in with just a rough concept and walked out with a potential Advertising professional for my product . The E-Cell club truly knows how to bring together the brightest minds and create a space where innovation feels inevitable. Definitely the highlight of my semester.",
+        "image": "https://github.com/NiliS2006/ecell-images/blob/main/WhatsApp%20Image%202026-01-15%20at%2020.58.06.jpeg?raw=true",
+        "designation": "2nd Year, Information Science"
+    },
+    {
+        "id": 7,
+        "name": "Khlongpaiha",
+        "text": "My first ECell event was Jugaad. It was super fun-answering the quiz and later on, making a phone stand using the given items..",
+        "image": "https://github.com/NiliS2006/ecell-images/blob/main/IMG-20250830-WA0060.jpg?raw=true",
+        "designation": "2nd Year, Electronics"
+    },
+    {
+        "id": 8,
+        "name": "Arijit Patnayak",
+        "text": "Marketing ads was one of my first events in ecell uvce. It was really fun to brainstorm and make a poster for a random product.. also the pitching part was very interactive. We ended up winning so it was a great experience!",
+        "image": "https://github.com/NiliS2006/ecell-images/blob/main/WhatsApp%20Image%202026-01-15%20at%2020.55.24.jpeg?raw=true",
+        "designation": "2nd Year, Electronics"
+    },
+    {
+        "id": 9,
+        "name": "Anand KS",
+        "text": "The E-Cell event was an enriching experience that effectively combined entertainment with informative content. I appreciated the well-organized activities and look forward to participating in more such events in the future.",
+        "image": "https://github.com/NiliS2006/ecell-images/blob/main/WhatsApp%20Image%202026-01-15%20at%2021.33.16.jpeg?raw=true",
+        "designation": "1st Year, Electrical"
+    },
+    {
+        "id": 10,
+        "name": "Kartikeya Saini",
+        "text": "The E-Cell event was an enriching experience that effectively combined entertainment with informative content. I appreciated the well-organized activities and look forward to participating in more such events in the future.",
+        "image": "Being a part of Entrepreneurship Cell UVCE has been a fantastic journey. The mentorship programs have been invaluable, and I've learned so much from the passionate community here",
+        "designation": "Student, UVCE"
+    },
+    {
+        "id": 11,
+        "name": "Rushil BR",
+        "text": "The exclusive access to curated events and workshops has been a game-changer for me. Entrepreneurship Cell UVCE provides a platform for continuous learning and growth.",
+        "image": "https://media-maa2-1.cdn.whatsapp.net/v/t61.24694-24/419711062_739182584834179_3266864267092605175_n.jpg?ccb=11-4&oh=01_AdSC3JexMHe_PrzoSLfEfig8gzXoAZlxen7Mxr4I50_29w&oe=65B90C69&_nc_sid=e6ed6c&_nc_cat=109",
+        "designation": "Entrepreneur"
+    },
+    {
+        "id": 12,
+        "name": "Shreyas",
+        "text": "The exclusive access to curated events and workshops has been a game-changer for me. Entrepreneurship Cell UVCE provides a platform for continuous learning and growth.",
+        "image": "https://media-maa2-2.cdn.whatsapp.net/v/t61.24694-24/410350975_606893054897276_2780830952425532174_n.jpg?ccb=11-4&oh=01_AdQtW2CodQWv1rnKdm7ArPW2QQo1PsFE737r5csOYmkl7A&oe=65B90B1F&_nc_sid=e6ed6c&_nc_cat=110",
+        "designation": "Entrepreneur"
+    },
+    {
+        "id": 13,
+        "name": "Tejas R",
+        "text": "I cherish the impactful memories created during events like StartUp to Win. Entrepreneurship Cell UVCE plays a crucial role in shaping the entrepreneurial mindset of students.",
+        "image": "https://media-maa2-1.cdn.whatsapp.net/v/t61.24694-24/322282589_172740678848037_7007146453107698501_n.jpg?ccb=11-4&oh=01_AdRU5NshYhxuXy8z2DgulmryxFgR_PC0RKP5FMHBBDpYAw&oe=65B92928&_nc_sid=e6ed6c&_nc_cat=103",
+        "designation": "Alumnus, UVCE"
+    },
+    {
+        "id": 14,
+        "name": "Bhagyashree R",
+        "text": "The event was really nice and truly entrepreneurial. It helped us understand how ideas can be converted into real products. As a part of the activity, we made a product called a phone stand, which was a very interesting and enjoyable experience. Through this event, I learned a lot about teamwork, creativity, and practical implementation of ideas. Overall, it was a great learning experience and I really enjoyed being a part of this event.",
+        "image": "https://github.com/NiliS2006/ecell-images/blob/main/WhatsApp%20Image%202026-01-15%20at%2021.32.21.jpeg?raw=true",
+        "designation": "1st Year, Electrical"
     }
 ]

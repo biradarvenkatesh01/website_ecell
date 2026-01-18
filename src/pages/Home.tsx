@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronLeft,
   ChevronRight,
+  Plus,
   Trophy,
   Users,
   Rocket,
@@ -10,12 +11,13 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { stats } from "../data/stats";
-import { heroSlides } from "../data";
+import { faqs, heroSlides, testimonials } from "../data";
 import PartnerMarquee from "../components/PartnerMarquee";
 import TestimonialMarquee from "../components/TestimonialMarquee";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   // Auto-play Hero logic
   useEffect(() => {
@@ -29,7 +31,7 @@ const Home = () => {
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   const prevSlide = () =>
     setCurrentSlide(
-      (prev) => (prev - 1 + heroSlides.length) % heroSlides.length
+      (prev) => (prev - 1 + heroSlides.length) % heroSlides.length,
     );
 
   return (
@@ -172,47 +174,143 @@ const Home = () => {
         </section>
 
         {/* --- PARTNERS SECTION --- */}
-        <section className="py-40 bg-black overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 mb-20">
-            <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-6 text-center md:text-left">
+        <section className="py-32 bg-black overflow-hidden border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-6 mb-16">
+            <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-6">
               <div>
-                <span className="text-[#39FF14] text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block">
+                <span className="text-[#39FF14] text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block text-center md:text-left font-mono">
                   Industry & Ecosystem
                 </span>
-                <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">
-                  Our <span className="text-gray-600 italic">Partners.</span>
+                <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-center md:text-left text-white">
+                  Our{" "}
+                  <span className="text-zinc-700 italic font-light">
+                    Partners.
+                  </span>
                 </h2>
               </div>
-              <p className="text-gray-500 font-mono text-[10px] uppercase tracking-widest">
+              <p className="text-zinc-500 font-mono text-[10px] uppercase tracking-widest text-center md:text-left">
                 Collaborating to empower student innovation.
               </p>
             </div>
           </div>
           <PartnerMarquee />
-          <div className="mt-4 opacity-50">
-            <PartnerMarquee reverse />
-          </div>
         </section>
 
         {/* --- TESTIMONIALS SECTION --- */}
-        <section className="py-32 bg-black border-t border-white/5 overflow-hidden">
+        <section className="py-32 bg-black overflow-hidden border-t border-white/5">
           <div className="max-w-7xl mx-auto px-6 mb-16">
-            <div className="flex flex-col items-center text-center">
-              <div className="relative z-20 flex items-center gap-2 mb-4">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#39FF14] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#39FF14]"></span>
+            <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-6">
+              <div>
+                <span className="text-[#39FF14] text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block text-center md:text-left font-mono">
+                  Network Strength
                 </span>
-                <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-[#39FF14] font-mono">
-                  Voices of the Ecosystem
-                </span>
+                <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-center md:text-left text-white">
+                  Ecosystem{" "}
+                  <span className="text-zinc-700 italic font-light">
+                    Validation.
+                  </span>
+                </h2>
               </div>
-              <h2 className="text-5xl md:text-7xl font-bold tracking-tighter relative z-10">
-                Testi<span className="text-gray-600 italic">monials.</span>
-              </h2>
+              <p className="text-zinc-500 font-mono text-[10px] uppercase tracking-widest text-center md:text-left">
+                Voices from mentors, alumni, and leaders.
+              </p>
             </div>
           </div>
-          <TestimonialMarquee />
+
+          <div className="relative flex overflow-x-hidden border-y border-white/5 bg-zinc-950/20 py-12">
+            <div className="animate-marquee flex whitespace-nowrap gap-8">
+              {[...testimonials, ...testimonials].map((item, index) => (
+                <div
+                  key={index}
+                  className="w-[350px] md:w-[450px] shrink-0 bg-zinc-900/40 border border-white/5 p-8 rounded-2xl flex flex-col justify-between whitespace-normal group hover:border-[#39FF14]/30 transition-colors duration-500"
+                >
+                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-8 italic">
+                    "{item.text}"
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="h-10 w-10 rounded-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all"
+                    />
+                    <div>
+                      <h4 className="text-white font-bold text-sm tracking-tight">
+                        {item.name}
+                      </h4>
+                      <p className="text-[#39FF14] font-mono text-[9px] uppercase tracking-wider">
+                        {item.designation}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10" />
+          </div>
+        </section>
+
+        {/* --- FAQ SECTION --- */}
+        <section className="py-32 bg-black border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-6 mb-20">
+              <div>
+                <span className="text-[#39FF14] text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block text-center md:text-left font-mono">
+                  Support Center
+                </span>
+                <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-center md:text-left text-white">
+                  General{" "}
+                  <span className="text-zinc-700 italic font-light">FAQs.</span>
+                </h2>
+              </div>
+              <p className="text-zinc-500 font-mono text-[10px] uppercase tracking-widest text-center md:text-left">
+                Quick answers to common inquiries.
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto border-t border-white/10">
+              {faqs.map((faq) => (
+                <div key={faq.id} className="border-b border-white/5">
+                  <button
+                    onClick={() =>
+                      setExpandedFaq(expandedFaq === faq.id ? null : faq.id)
+                    }
+                    className="w-full py-8 flex items-start justify-between text-left group transition-all"
+                  >
+                    <div className="flex gap-8">
+                      <span className="font-mono text-[10px] text-zinc-700 mt-2 shrink-0">
+                        {faq.id < 10 ? `0${faq.id}` : faq.id}
+                      </span>
+                      <span
+                        className={`text-xl md:text-2xl font-bold tracking-tight transition-all duration-300 ${expandedFaq === faq.id ? "text-white" : "text-zinc-500 group-hover:text-zinc-300"}`}
+                      >
+                        {faq.question}
+                      </span>
+                    </div>
+                    <div
+                      className={`mt-1 shrink-0 transition-transform duration-500 ${expandedFaq === faq.id ? "rotate-45 text-[#39FF14]" : "rotate-0 text-zinc-800"}`}
+                    >
+                      <Plus size={24} />
+                    </div>
+                  </button>
+                  <AnimatePresence>
+                    {expandedFaq === faq.id && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                      >
+                        <div className="pl-16 pb-10 pr-10 text-zinc-400 font-light leading-relaxed text-lg max-w-2xl">
+                          {faq.answer}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
       </div>
     </div>

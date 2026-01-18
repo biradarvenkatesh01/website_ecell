@@ -1,104 +1,46 @@
-import { motion } from "framer-motion";
-import { Linkedin, Github, Mail } from "lucide-react";
+import { Terminal } from "lucide-react";
 
-interface Member {
-  name: string;
-  post: string;
-  imageUrl?: string;
-  linkedin?: string;
-  github?: string;
-  email?: string;
-}
-
-const TeamCard = ({ member, isLead }: { member: Member; isLead: boolean }) => {
+const TestimonialCard = ({ testimonial }: { testimonial: any }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      className={`group relative border border-white/5 transition-all duration-500 hover:bg-white/[0.02] overflow-hidden
-        ${
-          isLead
-            ? "flex flex-row items-center p-8 gap-8 rounded-2xl"
-            : "flex flex-col p-4 rounded-xl text-center"
-        }`}
-    >
-      {/* Portrait Section */}
-      <div
-        className={`relative shrink-0 overflow-hidden rounded-xl border border-white/10 group-hover:border-[#39FF14]/40 transition-all duration-700
-        ${isLead ? "w-32 h-32 md:w-44 md:h-44" : "w-full aspect-square mb-4"}`}
-      >
-        <img
-          src={
-            member.imageUrl ||
-            "https://res.cloudinary.com/demo/image/upload/v1652345767/docs/avatar.png"
-          }
-          alt={member.name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-40 group-hover:opacity-10 transition-opacity" />
+    <div className="w-[300px] md:w-[420px] shrink-0 bg-[#050505] border border-white/5 p-5 rounded-lg group/card hover:border-[#39FF14]/40 transition-all duration-500 mx-3 flex flex-col backdrop-blur-xl">
+      {/* Terminal-style Header */}
+      <div className="flex items-center justify-between mb-4 border-b border-white/5 pb-3">
+        <div className="flex items-center gap-2">
+          <Terminal size={12} className="text-[#39FF14] opacity-50" />
+          <span className="text-[9px] font-mono uppercase tracking-widest text-gray-500">
+            Feed_Ref_{testimonial.id || "0x_SEC"}
+          </span>
+        </div>
+        <div className="h-1 w-1 rounded-full bg-[#39FF14] animate-pulse" />
       </div>
 
-      {/* Info Section */}
-      <div className={`flex flex-col ${isLead ? "text-left" : "items-center"}`}>
-        <h4
-          className={`font-bold tracking-tighter leading-tight transition-colors duration-500 
-          ${
-            isLead
-              ? "text-3xl md:text-5xl text-[#39FF14]"
-              : "text-lg text-white"
-          }`}
-        >
-          {member.name}
-        </h4>
-        <p
-          className={`uppercase tracking-[0.3em] text-gray-500 font-bold 
-          ${isLead ? "text-[10px] mt-2" : "text-[8px] mt-1"}`}
-        >
-          {member.post}
+      {/* Body: Tightened leading and fixed text wrapping */}
+      <div className="mb-6">
+        <p className="text-[12px] md:text-[13px] font-light leading-snug text-gray-300 whitespace-normal break-words italic">
+          "{testimonial.text}"
         </p>
-
-        {/* Social Bar */}
-        <div
-          className={`flex gap-4 mt-4 transition-all duration-500 
-          ${
-            isLead
-              ? "opacity-100"
-              : "opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0"
-          }`}
-        >
-          {[
-            { icon: Linkedin, url: member.linkedin },
-            {
-              icon: Github,
-              url: member.github ? `https://github.com/${member.github}` : null,
-            },
-            { icon: Mail, url: member.email ? `mailto:${member.email}` : null },
-          ].map(
-            (social, i) =>
-              social.url && (
-                <a
-                  key={i}
-                  href={social.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-500 hover:text-[#39FF14] transition-colors"
-                >
-                  <social.icon size={isLead ? 18 : 14} />
-                </a>
-              )
-          )}
-        </div>
       </div>
 
-      {/* Subtle ID watermark only for leads */}
-      {isLead && (
-        <div className="absolute -right-2 -bottom-4 pointer-events-none opacity-[0.03] select-none italic text-7xl font-black">
-          LEAD
+      {/* Footer: Identity Node */}
+      <div className="flex items-center gap-3 mt-auto pt-4 border-t border-white/5">
+        <div className="h-8 w-8 rounded bg-zinc-800 shrink-0 overflow-hidden border border-white/10">
+          <img
+            src={testimonial.image}
+            alt={testimonial.name}
+            className="w-full h-full object-cover grayscale group-hover/card:grayscale-0 transition-all duration-500"
+          />
         </div>
-      )}
-    </motion.div>
+        <div className="flex flex-col text-left overflow-hidden">
+          <h4 className="text-[10px] md:text-[11px] font-bold text-white uppercase tracking-tighter truncate">
+            {testimonial.name}
+          </h4>
+          <p className="text-[8px] uppercase tracking-[0.2em] text-[#39FF14] font-mono truncate">
+            {testimonial.designation}
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default TeamCard;
+export default TestimonialCard;

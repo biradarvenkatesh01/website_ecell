@@ -5,14 +5,17 @@ export default {
     extend: {
       animation: {
         // Slowed down for better visibility of larger colorful logos
-        marquee: 'marquee 40s linear infinite',
-        'marquee-reverse': 'marquee-reverse 40s linear infinite',
-        'testimonial-marquee': 'testimonial-marquee 40s linear infinite',
+        marquee: 'marquee 100s linear infinite',
+        'marquee-reverse': 'marquee-reverse 100s linear infinite',
+        'testimonial-marquee': 'testimonial-marquee 100s linear infinite',
+        'testimonial-marquee-reverse': 'testimonial-marquee-reverse 100s linear infinite',
+        "testimonial-marquee": "testimonial-scroll linear infinite",
+        "testimonial-marquee-reverse": "testimonial-scroll-reverse linear infinite"
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-33.33%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
         'marquee-reverse': {
           '0%': { transform: 'translateX(-33.33%)' },
@@ -20,8 +23,20 @@ export default {
         },
         'testimonial-marquee': {
           '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-33.33%)' },
+          '100%': { transform: 'translateX(-33.33%)' }, // Moves across one full set of 3
         },
+        'testimonial-marquee-reverse': {
+          '0%': { transform: 'translateX(-33.33%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+        "testimonial-scroll": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" }
+        },
+        "testimonial-scroll-reverse": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(50%)" }
+        }
       },
       colors: {
         primary: {

@@ -1,20 +1,8 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  ChevronDown,
-  Terminal,
-  Globe,
-} from "lucide-react";
-import { faqs } from "../data";
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Terminal, Globe } from "lucide-react";
 import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
-  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
-  const faqCategories = Array.from(new Set(faqs.map((faq) => faq.category)));
-
   return (
     <div className="min-h-screen bg-black text-white pt-32 pb-16 font-sans selection:bg-[#39FF14] selection:text-black">
       {/* Background Dot matrix */}
@@ -119,68 +107,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        {/* --- FAQ SECTION --- */}
-        <section className="max-w-4xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold tracking-tighter mb-4">
-              Common <span className="text-gray-600">Queries.</span>
-            </h2>
-            <div className="h-1 w-12 bg-[#39FF14] mx-auto" />
-          </div>
-
-          <div className="space-y-12">
-            {faqCategories.map((category) => (
-              <div key={category}>
-                <h3 className="text-[10px] uppercase tracking-[0.5em] text-[#39FF14] mb-8 font-mono">
-                  // {category}
-                </h3>
-                <div className="border-t border-white/5">
-                  {faqs
-                    .filter((faq) => faq.category === category)
-                    .map((faq) => (
-                      <div key={faq.id} className="border-b border-white/5">
-                        <button
-                          onClick={() =>
-                            setExpandedFaq(
-                              expandedFaq === faq.id ? null : faq.id
-                            )
-                          }
-                          className="w-full py-6 flex items-center justify-between text-left group"
-                        >
-                          <span className="text-lg font-medium group-hover:text-[#39FF14] transition-colors">
-                            {faq.question}
-                          </span>
-                          <ChevronDown
-                            className={`text-gray-600 transition-transform duration-500 ${
-                              expandedFaq === faq.id
-                                ? "rotate-180 text-[#39FF14]"
-                                : ""
-                            }`}
-                            size={20}
-                          />
-                        </button>
-                        <AnimatePresence>
-                          {expandedFaq === faq.id && (
-                            <motion.div
-                              initial={{ height: 0, opacity: 0 }}
-                              animate={{ height: "auto", opacity: 1 }}
-                              exit={{ height: 0, opacity: 0 }}
-                              className="overflow-hidden"
-                            >
-                              <p className="pb-8 text-gray-500 font-light leading-relaxed max-w-3xl">
-                                {faq.answer}
-                              </p>
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
-                      </div>
-                    ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
       </div>
     </div>
   );
