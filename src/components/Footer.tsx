@@ -73,23 +73,25 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-3 font-mono text-[10px] uppercase tracking-widest">
-              {["About", "Events", "Gallery", "Resources", "Merch"].map(
-                (item) => (
-                  <li key={item}>
-                    <Link
-                      to={
-                        item === "Merch"
-                          ? "/merchandise"
-                          : `/${item.toLowerCase()}`
-                      }
-                      className="text-gray-500 hover:text-white flex items-center group transition-colors"
-                    >
-                      <ChevronRight className="h-3 w-3 mr-1 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 text-[#39FF14] transition-all" />
-                      {item}
-                    </Link>
-                  </li>
-                )
-              )}
+              {[
+                "About",
+                "Events",
+                "Contact" /* "Gallery", "Resources", "Merch" */,
+              ].map((item) => (
+                <li key={item}>
+                  <Link
+                    to={
+                      item === "Merch"
+                        ? "/merchandise"
+                        : `/${item.toLowerCase()}`
+                    }
+                    className="text-gray-500 hover:text-white flex items-center group transition-colors"
+                  >
+                    <ChevronRight className="h-3 w-3 mr-1 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 text-[#39FF14] transition-all" />
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

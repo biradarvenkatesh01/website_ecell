@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Events from './pages/Events';
-import About from './pages/About';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
-import Resources from './pages/Resources';
-import Merchandise from './pages/Merchandise';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Events from "./pages/Events";
+import About from "./pages/About";
+// import Gallery from './pages/Gallery';
+import Contact from "./pages/Contact";
+// import Resources from './pages/Resources';
+// import Merchandise from './pages/Merchandise';
 
 function App() {
   useEffect(() => {
@@ -24,10 +24,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />
             <Route path="/about" element={<About />} />
-            <Route path="/gallery" element={<Gallery />} />
+            {/* <Route path="/gallery" element={<Gallery />} /> */}
             <Route path="/contact" element={<Contact />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/merchandise" element={<Merchandise />} />
+            {/* <Route path="/resources" element={<Resources />} /> */}
+            {/* <Route path="/merchandise" element={<Merchandise />} /> */}
           </Routes>
         </main>
         <Footer />
